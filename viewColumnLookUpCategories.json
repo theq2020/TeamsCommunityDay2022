@@ -1,0 +1,172 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "style": {
+      "flex-wrap": "wrap",
+      "display": "flex",
+      "font-size": "18px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "box-sizing": "border-box",
+          "padding": "4px 8px 5px 8px",
+          "display": "flex",
+          "align-items": "center",
+          "white-space": "nowrap",
+          "overflow": "hidden",
+          "margin": "4px 4px 4px 4px"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "Office App",
+              "iconName": "OfficeLogo",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('Excel')) != -1 || indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('Word')) != -1 || indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('PowerPoint')) != -1 || indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('Publisher')) != -1, 'themeDark', 'themeLight')"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "OneDrive",
+              "iconName": "OneDriveLogo",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('OneDrive')) != -1, 'themeDark', 'themeLight')"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "OneNote",
+              "iconName": "OneNoteLogo",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'')),toLowerCase('OneNote')) != -1, 'themeDark', 'themeLight')"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "Whiteboard",
+              "iconName": "WhiteBoardApp16",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'|')), toLowerCase('Whiteboard')) !=-1,'themeDark','themeLight'"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "Forms",
+              "iconName": "OfficeFormsLogo",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'|')), toLowerCase('Forms')) !=-1,'themeDark','themeLight'"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "Stream",
+              "iconName": "StreamLogo",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'|')), toLowerCase('Stream')) !=-1,'themeDark','themeLight'"
+            }
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "box-sizing": "border-box",
+          "padding": "10px 10px 10px 10px",
+          "display": "flex",
+          "height": "24px",
+          "align-items": "center",
+          "white-space": "nowrap",
+          "overflow": "hidden",
+          "margin": "4px 4px 4px 4px"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "SharePoint",
+              "iconName": "SharePointLogo",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('SharePoint')) != -1 || indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('Word')) != -1 || indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('PowerPoint')) != -1 || indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('Publisher')) != -1, 'themeDark', 'themeLight')"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "Lists",
+              "iconName": "BacklogList",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'')), toLowerCase('Lists')) != -1, 'themeDark', 'themeLight')"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "Teams",
+              "iconName": "TeamsLogo",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'')),'teams') != -1, 'themeDark', 'themeLight')"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "PowerApps",
+              "iconName": "powerapps",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'|')), toLowerCase('power apps')) !=-1,'themeDark','themeLight'"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "PowerAutomate",
+              "iconName": "PowerAutomateLogo",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'|')), toLowerCase('PowerAutomate')) !=-1,'themeDark','themeLight'"
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "padding": "0 3px"
+            },
+            "attributes": {
+              "title": "PowerBI",
+              "iconName": "PowerBILogo",
+              "class": "='ms-fontColor-' + if(indexOf(toLowerCase(join(@currentField.lookupValue,'|')), toLowerCase('Power BI')) !=-1,'themeDark','themeLight'"
+            }
+          }
+        ]
+      }
+    ]
+  }
