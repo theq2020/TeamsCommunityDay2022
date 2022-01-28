@@ -1,0 +1,60 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+    "height": 60,
+    "width": 170,
+    "hideSelection": false,
+    "fillHorizontally": true,
+    "formatter": {
+      "elmType": "div",
+      "style": {
+        "display": "flex",
+        "align-content": "flex-start",
+        "align-items": "center",
+        "align-self": "center"
+      },
+      "attributes": {
+        "class": "sp-card-container"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "attributes": {
+            "class": "ms-bgColor-white ms-bgColor-gray20--hover ms-fontColor-themeDark--hover sp-css-borderColor-neutralLight sp-card-borderHighlight sp-card-subContainer",
+            "title": "[$Title])"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "style": {
+                "margin-top": "10px",
+                "display": "flex",
+                "justify-content": "center"
+              },
+              "attributes": {},
+              "children": [
+                {
+                  "elmType": "span",
+                  "style": {},
+                  "attributes": {
+                    "iconName": "=if([$Title] == '-', 'fieldEmpty', if([$Title] == 'M365', 'OfficeLogo', if([$Title] == 'Power Apps', 'PowerApps', if([$Title] == 'Teams', 'TeamsLogo', if([$Title] == 'SharePoint', 'SharepointLogo', if([$Title] == 'PowerPoint', 'PowerPointLogo', if([$Title] == 'Word', 'WordLogo',if([$Title] == 'Excel', 'ExcelLogo',if([$Title] == 'OneNote', 'OneNoteLogo',if([$Title] == 'Power BI', 'PowerBILogo', if([$Title] == 'Lists', 'BacklogList', if([$Title] == 'MS Whiteboard', 'WhiteBoardApp16', if([$Title] == 'Publisher', 'PublisherLogo', if([$Title] == 'Stream', 'StreamLogo', if([$Title] == 'Outlook', 'OutlookLogo', if([$Title] == 'ToDo/Planner', 'ToDoLogoInverse', if([$Title] == 'PowerApps', 'PowerAppsLogo', if([$Title] == 'PowerAutomate', 'PowerAutomateLogo', if([$Title] == 'Forms', 'OfficeFormsLogo', if([$Title] == 'Access', 'AccessLogo', if([$Title] == 'OneDrive', 'OneDriveLogo', if([$Title] == 'Delve', 'DelveLogo', 'FieldEmpty')))))))))))))))))))))",
+                    "class": "sp-field-fontSize24"
+                  }
+                },
+                {
+                  "elmType": "span",
+                  "style": {
+                    "padding-left": "5px"
+                  },
+                  "attributes": {
+                    "class": "ms-fontSize-18 "
+                  },
+                  "txtContent": "[$Title]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

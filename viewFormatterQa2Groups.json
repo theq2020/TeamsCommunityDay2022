@@ -1,0 +1,76 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+    "hideColumnHeader": true,
+    "rowFormatter": {
+      "elmType": "div",
+      "style": {
+        "display": "flex",
+        "flex-direction": "column",
+        "align-items": "flex-start"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "style": {
+            "width": "70%",
+            "padding": "4px",
+            "border-top-width": "0"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "children": [
+                {
+                  "elmType": "span",
+                  "txtContent": "Q: ",
+                  "attributes": {
+                    "class": "ms-fontSize-12 ms-fontWeight-semibold ms-fontColor-sharedCyanBlue10 "
+                  },
+                  "style": {
+                    "width": "95%"
+                  }
+                },
+                {
+                  "elmType": "span",
+                  "txtContent": "[$FrageLang]",
+                  "attributes": {
+                    "class": "ms-fontSize-12 ms-fontWeight-semibold ms-fontColor-sharedCyanBlue10 "
+                  },
+                  "style": {
+                    "width": "20%"
+                  }
+                }
+              ]
+            },
+            {
+              "elmType": "div",
+              "attributes": {
+                "class": "ms-fontSize-16"
+              },
+              "style": {
+                "width": "10%"
+              },
+              "txtContent": "[$Antwort]"
+            }
+          ]
+        }
+      ]
+    },
+    "groupProps": {
+      "headerFormatter": {
+        "elmType": "div",
+        "style": {
+          "width": "100%"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "=if(@group.columnDisplayName == 'Tool', 'ms-fontSize-18  ms-fontWeight-semibold', 'ms-fontSize-18') "
+            },
+            "txtContent": "=if(@group.columnDisplayName == 'Tool', @group.fieldData.lookupValue, @group.fieldData.displayValue)"
+          }
+        ]
+      }
+    }
+  }
